@@ -14,6 +14,7 @@ from tabs import (
 
 st.set_page_config(layout="wide")
 st.title("🏏 IPL Analytics Dashboard")
+st.markdown("Designed and developed by Nrupesh Ganji &copy; NCG Global Enterprises", unsafe_allow_html=True)
 
 ############# Load data ##############
 df = load_data()
