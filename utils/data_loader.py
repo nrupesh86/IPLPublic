@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 from utils.venue_mapping import venue_mapping
@@ -6,7 +8,15 @@ from utils.venue_city_mapping import venue_city_mapping
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/ipl.csv", low_memory=False)
+    project_root = Path(__file__).resolve().parents[1]
+    preferred = project_root / "data" / "IPL.csv"
+    fallback = project_root / "data" / "ipl.csv"
+
+    csv_path = preferred if preferred.exists() else fallback
+    if not csv_path.exists():
+        raise FileNotFoundError(f"Dataset not found at {preferred} or {fallback}")
+
+    df = pd.read_csv(csv_path, low_memory=False)
     df["date"] = pd.to_datetime(df["date"])
     df["year"] = df["date"].dt.year
 
