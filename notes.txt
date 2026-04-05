@@ -1,0 +1,51 @@
+Section 1 — League Overview
+
+Matches per season
+
+Venue distribution
+
+Toss decision patterns
+
+Toss impact on win probability
+
+Section 2 — Team Analysis
+
+Win % by team
+
+Win % batting first vs chasing
+
+Average score per team
+
+Home advantage effect
+
+Section 3 — Batting Analytics
+
+From deliveries.csv:
+
+Top run scorers
+
+Strike rate analysis
+
+Boundary % contribution
+
+Performance by phase (Powerplay / Death Overs)
+
+Section 4 — Bowling Analytics
+
+Economy rate
+
+Strike rate
+
+Dot ball %
+
+Wickets by phase
+
+Section 5 — Advanced Insights (Differentiator Section)
+
+Does toss matter statistically?
+
+Does venue influence scoring?
+
+Has scoring trend increased over seasons?
+
+Are death overs becoming more expensive?
