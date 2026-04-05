@@ -1,6 +1,3 @@
-# CSV files
-ipl.csv
-
 # Python
 __pycache__/
 *.py[cod]
@@ -21,6 +18,5 @@ venv/
 Thumbs.db
 
 # Data
-*.csv
 *.xlsx
 *.db
